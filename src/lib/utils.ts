@@ -3,8 +3,9 @@ import { twMerge } from 'tailwind-merge'
 import { formatDistanceToNowStrict } from 'date-fns'
 import locale from 'date-fns/locale/en-US'
 
+// combines multiple classNames together optimally (my-2 mx-2 -> m2)
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return twMerge(clsx(inputs));
 }
 
 const formatDistanceLocale = {
