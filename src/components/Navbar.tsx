@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Icons from "./Icons";
+import { Icons } from "./Icons";
 import { buttonVariants } from "./ui/Button";
 
 const Navbar = () => {

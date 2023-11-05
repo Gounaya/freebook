@@ -1,6 +1,7 @@
 import { FC } from 'react'
-import Icons from './Icons'
+import { Icons } from './Icons'
 import Link from 'next/link'
+import UserAuthForm from './UserAuthForm'
 
 interface SignInProps {
 
@@ -16,7 +17,7 @@ const SignIn: FC<SignInProps> = ({ }) => {
                 User Agreement and Privacy Policy.
             </p>
 
-            {/* Sign in form */}
+            <UserAuthForm />
             <p className='px-8 text-center text-sm text-zinc-700'>
                 New to Freebook ? {' '}
                 <Link href='/sign-up' className='hover:text-zinc-800 text-sm underline underline-offset-4'>
